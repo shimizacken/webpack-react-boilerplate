@@ -2,9 +2,12 @@ let path = require('path');
 let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let loaders = require('./webpack.loaders');
+const PORT = 8282;
 
 module.exports = {
-    entry: './src/app.js',
+    entry: [
+        'webpack-dev-server/client?http://localhost:' + PORT + '/',
+        './src/app.js'],
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, 'build'),
@@ -27,11 +30,11 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: './public',
+        contentBase: './',
         hot: true,
         inline: true,
         noInfo: true,
         historyApiFallback: true,
-        port: 8282
+        port: PORT
     }
 };
