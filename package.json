@@ -2,9 +2,9 @@
   "name": "webpack-template",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.condig.js",
+  "main": "app.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config=./webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/shimizacken/webpack-template/issues"
   },
-  "homepage": "https://github.com/shimizacken/webpack-template#readme"
+  "homepage": "https://github.com/shimizacken/webpack-template#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1"
+  },
+  "dependencies": {
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
