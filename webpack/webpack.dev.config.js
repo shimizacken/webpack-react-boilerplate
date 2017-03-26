@@ -10,8 +10,8 @@ module.exports = {
         './src/app.js'],
     output: {
         publicPath: '/',
-        path: path.resolve(__dirname, 'build'),
-        filename: 'bundle.js'
+        path: path.resolve('build', ''),
+        filename: '[name].js'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.webpack.js', '.web.js'],

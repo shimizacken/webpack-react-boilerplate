@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "npm-run-all webpack webpack-dev-derver",
-    "webpack": "webpack --config=./webpack/webpack.config.js",
-    "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.config.js --hot --progress --colors --open"
+    "webpack": "webpack --config=./webpack/webpack.dev.config",
+    "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.dev.config --hot --progress --colors --open"
   },
   "repository": {
     "type": "git",
