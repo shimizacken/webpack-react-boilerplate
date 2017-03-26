@@ -1,0 +1,19 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.condig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimizacken/webpack-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimizacken/webpack-template/issues"
+  },
+  "homepage": "https://github.com/shimizacken/webpack-template#readme"
+}
