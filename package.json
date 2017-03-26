@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.condig.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
