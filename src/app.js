@@ -1,3 +1,1 @@
-let some = {
-    
-};
+import jQuery from 'jquery';

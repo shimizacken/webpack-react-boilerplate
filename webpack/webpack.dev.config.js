@@ -45,6 +45,9 @@ module.exports = {
             allChunks: true
         }),
     ],
+    externals: {
+        "jquery": "jQuery"
+    },
     devServer: {
         contentBase: './',
         hot: true,

@@ -7,7 +7,8 @@
     "start": "npm-run-all webpack webpack-dev-derver",
     "webpack": "webpack --config=./webpack/webpack.dev.config",
     "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.dev.config --hot --progress --colors --open",
-    "build": "webpack --config=./webpack/webpack.production.config"
+    "dev-build": "npm-run-all webpack",
+    "build": "webpack --config=./webpack/webpack.production.config --progress --profile --colors"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "webpack-cleanup-plugin": "^0.5.1"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
   }
