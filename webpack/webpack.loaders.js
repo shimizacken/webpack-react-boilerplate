@@ -1,3 +1,5 @@
+"use strict"
+
 const EXCLUDE_FOLDERS = /node_modules/;
 
 module.exports = [
