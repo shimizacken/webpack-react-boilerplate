@@ -2,16 +2,18 @@ let path = require('path');
 let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let loaders = require('./webpack.loaders');
+
 const PORT = 8282;
 
 module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:' + PORT + '/',
-        './src/app.js'],
+        './src/app.js'
+        ],
     output: {
         publicPath: '/',
-        path: path.resolve('build', ''),
-        filename: '[name].js'
+        path: path.resolve('build'),
+        filename: 'bundle.dev.js'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.webpack.js', '.web.js'],
