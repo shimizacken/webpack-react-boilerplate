@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "webpack --config=./webpack/webpack.config.js"
+    "start": "npm-run-all webpack webpack-dev-derver",
+    "webpack": "webpack --config=./webpack/webpack.config.js",
+    "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.config.js --hot --progress --colors --open"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
   "homepage": "https://github.com/shimizacken/webpack-template#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1"
+    "babel-loader": "^6.4.1",
+    "html-webpack-plugin": "^2.28.0"
   },
   "dependencies": {
     "webpack": "^2.3.2",
