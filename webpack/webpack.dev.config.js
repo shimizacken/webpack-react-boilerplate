@@ -48,7 +48,9 @@ module.exports = {
         }),
     ],
     externals: {
-        "jquery": "jQuery"
+        'jquery': /^(jquery|\$)$/i,
+        'react': 'React',
+        'react-dom': 'ReactDOM'
     },
     devServer: {
         contentBase: './',
