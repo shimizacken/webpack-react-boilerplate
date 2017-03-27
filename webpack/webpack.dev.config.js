@@ -9,10 +9,13 @@ let loaders = require('./webpack.loaders');
 const PORT = 8282;
 
 module.exports = {
-    entry: [
-        'webpack-dev-server/client?http://localhost:' + PORT + '/',
-        './src/app.js'
-    ],
+    entry: {
+        app: [
+            'webpack-dev-server/client?http://localhost:' + PORT + '/',
+            './src/app.js'
+        ],
+        vendor: ["jquery", "react", "react-dom"]
+    },
     output: {
         publicPath: '/',
         path: path.resolve('build'),
@@ -46,12 +49,22 @@ module.exports = {
             filename: 'style.css',
             allChunks: true
         }),
-    ],
+        /*
+        new webpack.DllReferencePlugin({
+            manifest: require("../vendors/vendor-manifest.json"),
+            name: "vendors"
+        }),*/
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor",
+            filename: "vendor.bundle.js",
+            minChunks: Infinity
+        })
+    ],/*
     externals: {
         'jquery': /^(jquery|\$)$/i,
         'react': 'React',
         'react-dom': 'ReactDOM'
-    },
+    },*/
     devServer: {
         contentBase: './',
         hot: true,

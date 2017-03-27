@@ -7,8 +7,9 @@
     "start": "npm-run-all webpack webpack-dev-derver",
     "webpack": "webpack --config=./webpack/webpack.dev.config",
     "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.dev.config --hot --progress --colors --open",
-    "dev-build": "npm-run-all webpack",
-    "build": "webpack --config=./webpack/webpack.production.config --progress --profile --colors"
+    "build-dev": "npm-run-all webpack",
+    "build-prod": "webpack --config=./webpack/webpack.production.config --progress --profile --colors",
+    "build-dll": "webpack --config=./webpack/webpack.config.dll --progress --profile --colors"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "jquery": "^3.2.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
     "react-router": "^4.0.0",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
