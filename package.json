@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npm-run-all webpack webpack-dev-derver",
+    "start": "npm-run-all webpack-dev-derver",
     "webpack": "webpack --config=./webpack/webpack.dev.config",
     "webpack-dev-derver": "webpack-dev-server --config=./webpack/webpack.dev.config --hot --progress --colors --open",
     "build-dev": "npm-run-all webpack",
