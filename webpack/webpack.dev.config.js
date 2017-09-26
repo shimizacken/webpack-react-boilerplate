@@ -4,6 +4,7 @@ let path = require('path');
 let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 let loaders = require('./webpack.loaders');
 
 const PORT = 8282;
@@ -36,15 +37,15 @@ module.exports = {
                 js: ['bundle.js'],
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false,
-                screw_ie8: true,
-                drop_console: true,
-                drop_debugger: true
-            }
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: true,
+        //     compress: {
+        //         warnings: false,
+        //         screw_ie8: true,
+        //         drop_console: true,
+        //         drop_debugger: true
+        //     }
+        // }),
         new ExtractTextPlugin({
             filename: 'style.css',
             allChunks: true
@@ -58,19 +59,29 @@ module.exports = {
             name: "vendor",
             filename: "vendor.bundle.js",
             minChunks: Infinity
-        })
+        }),
+        new WebpackCleanupPlugin(),
     ],/*
     externals: {
         'jquery': /^(jquery|\$)$/i,
         'react': 'React',
         'react-dom': 'ReactDOM'
     },*/
+    devtool: 'cheap-source-map',
     devServer: {
         contentBase: './',
         hot: true,
         inline: true,
         noInfo: true,
         historyApiFallback: true,
-        port: PORT
+        port: PORT,
+        // proxy: {
+        //     '/cxwebclient/api': {
+        //         target: TARGET_PORTAL_URL
+        //     },
+        //     '/cxrestapi': {
+        //         target: TARGET_REST_API_URL
+        //     }
+        // }
     }
 };
