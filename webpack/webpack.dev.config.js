@@ -15,7 +15,7 @@ module.exports = {
             'webpack-dev-server/client?http://localhost:' + PORT + '/',
             './src/app.js'
         ],
-        vendor: ["jquery", "react", "react-dom"]
+        vendor: ["react", "react-dom"]
     },
     output: {
         publicPath: '/',
@@ -63,7 +63,6 @@ module.exports = {
         new WebpackCleanupPlugin(),
     ],/*
     externals: {
-        'jquery': /^(jquery|\$)$/i,
         'react': 'React',
         'react-dom': 'ReactDOM'
     },*/
