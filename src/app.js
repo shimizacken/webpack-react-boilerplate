@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
+const App = ({name}) => (
+  <div>{`Hi ${name}`}</div>
+ );
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <App name='shimi!' />,
   document.getElementById('root')
 );
