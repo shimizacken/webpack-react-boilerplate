@@ -50,11 +50,6 @@ module.exports = {
             filename: 'style.css',
             allChunks: true
         }),
-        /*
-        new webpack.DllReferencePlugin({
-            manifest: require("../vendors/vendor-manifest.json"),
-            name: "vendors"
-        }),*/
         new webpack.optimize.CommonsChunkPlugin({
             name: "vendor",
             filename: "vendor.bundle.js",

@@ -17,7 +17,21 @@ module.exports = [
             })
           }
         ]
-      }
+      },
+      {
+        rules: [{
+            test: /\.scss$/,
+            use: ExtractTextPlugin.extract({
+                use: [{
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }],
+                // use style-loader in development
+                fallback: "style-loader"
+            })
+        }]
+    }
     // {
     //     // Adds CSS to the DOM by injecting a <style> tag
     //     rules: [{
