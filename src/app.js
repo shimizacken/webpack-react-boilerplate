@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import ToolBar from './components/toolbar';
+import './styles/main.css';
+import './styles/second.css';
 
 const App = ({name}) => (
-  <div>{`Hi ${name}`}</div>
+  <div>
+    <ToolBar />
+    <div>
+      {`Hi ${name}`}
+      </div>
+    </div>
  );
 
 ReactDOM.render(
