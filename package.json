@@ -1,5 +1,5 @@
 {
-  "name": "webpack-template",
+  "name": "webpack-react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shimizacken/webpack-template.git"
+    "url": "git+https://github.com/shimizacken/webpack-react-boilerplate.git"
   },
   "author": "Shimi Zacken",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shimizacken/webpack-template/issues"
+    "url": "https://github.com/shimizacken/webpack-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/shimizacken/webpack-template#readme",
+  "homepage": "https://github.com/shimizacken/webpack-react-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
