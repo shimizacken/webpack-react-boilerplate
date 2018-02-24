@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>
-    webpack-react-boilerplate
+    :fire: webpack-react-boilerplate :fire:
   </h1>
 </div>
 
