@@ -8,12 +8,12 @@
   usage
 </h2>
 
-clone to local folder
+clone to local folder:
 ```bash
 git clone https://github.com/shimizacken/webpack-template.git
 ```
 
-install
+install:
 ```bash
 npm install
 ```
