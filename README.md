@@ -4,6 +4,8 @@
   </h1>
 </div>
 
+Simple `React` `Webpack` startup web app
+
 <h2>
   usage
 </h2>
