@@ -1,1 +1,2 @@
-# webpack-template
+<div align='center'>webpack-template</div>
+
