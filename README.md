@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-Simple `React` `Webpack` startup web app
+Simple `React` `webpack` web app
 
 <h2>
   usage
