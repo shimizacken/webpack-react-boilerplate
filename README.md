@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-Simple `React` `webpack` web app
+Simple `React` `webpack` web app for training
 
 <h2>
   usage
