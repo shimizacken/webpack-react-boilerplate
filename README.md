@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>
-    webpack-template
+    webpack-react-boilerplate
   </h1>
 </div>
 
@@ -12,7 +12,7 @@ Simple `React` `webpack` web app
 
 clone to local folder:
 ```bash
-git clone https://github.com/shimizacken/webpack-template.git
+git clone https://github.com/shimizacken/webpack-react-boilerplate.git
 ```
 
 install:
