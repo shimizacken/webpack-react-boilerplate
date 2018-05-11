@@ -5,25 +5,25 @@
 </div>
 
 ## About
-This project serves as basic Checkmarx `React` web application startup.
+This project serves as kickstart `React` web application
 
 ## Usage
 
 The original repository should be duplicated (mirrored)
 ```bash
-$ git clone --bare http://tfs2015app:8080/tfs/DefaultCollection/External%20Enterprise/_git/cx-web-kickstart
+$ git clone --bare https://github.com/shimizacken/webpack-react-boilerplate.git
 ```
 Mirror-push to the new repository
 ```bash
-$ cd cx-web-kickstart.git
-$ git push --mirror http://tfs2015app:8080/tfs/DefaultCollection/[project-name]/[new-repository].git
+$ cd webpack-react-boilerplate.git
+$ git push --mirror https://github.com/[project-name]/[new-repository].git
 ```
 Remove the temporary local repository you created in step 1.
 ```bash
 $ cd ..
-$ rm -rf cx-web-kickstart.git
+$ rm -rf webpack-react-boilerplate.git
 ```
-> **Note:** The original cx-web-kickstart cannot be edit
+> **Note:** The original webpack-react-boilerplate cannot be edit
 
 After the repository duplicated, install app dependencies:
 ```bash
